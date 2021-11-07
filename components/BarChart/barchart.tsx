@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
+import styles from '../layout.module.css'
+import utilStyles from '../../styles/utils.module.css'
 import Link from 'next/link'
-import {Answer} from '../models/answer'
+import {Answer} from '../../models/answer'
 import React from "react";
-import {BarChartClass, DataBarChart} from "../models/databarchart";
+import {BarChartClass, DataBarChart} from "../../models/databarchart";
 
 import { Bar } from "react-chartjs-2";
 export default class BarChart extends React.Component<Answer[],boolean> {

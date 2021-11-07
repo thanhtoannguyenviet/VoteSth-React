@@ -12,7 +12,7 @@ export class BarChartClass{
     DataBarChart: DataBarChart
     constructor(answer:Answer[]){
         this.DataBarChart.labels = SetLabels(answer)
-        this.DataBarChart.datasets[0].backgroundColor= SetbBckgroundColor(answer)
+        this.DataBarChart.datasets[0].backgroundColor= SetBackgroundColor(answer)
         this.DataBarChart.datasets[0].data = SetData(answer)
     }
 
@@ -24,7 +24,7 @@ function SetLabels(answers:Answer[]):string[]{
     })
     return labels
 }
-export function SetbBckgroundColor(answers:Answer[]):string[]{
+export function SetBackgroundColor(answers:Answer[]):string[]{
     const colors: string[]=[]
     answers.forEach( item => {
         colors.push('rgb('+Math.round(Math.random()*255)+','+Math.round(Math.random()*255)+','+Math.round(Math.random()*255)+')')
